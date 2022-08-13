@@ -23,6 +23,9 @@
 						<th>
 							<label asp-for="Books.FirstOrDefault().Author"></label>
 						</th>
+						<th>
+							<label asp-for="Books.FirstOrDefault().SBIN"></label>
+						</th>
 						<th></th>
 					</tr>
 					@foreach(var book in Model.Books)
@@ -30,9 +33,10 @@
 						<tr>
 							<td>@Html.DisplayFor(b=>book.Name)</td>
 							<td>@Html.DisplayFor(b=>book.Author)</td>
+							<td>@Html.DisplayFor(b=>book.SBIN)</td>
 							<td>
-								<button class="btn btn-danger btn-sm">Delete</button>
-								<a class="btn btn-success btn-sm text-white">Edit</a>
+								<button asp-page-handler="Delete" asp-route-id="@book.Id" onclick="return confirm('Are you sure you want to delete delete?')" class="btn btn-danger btn-sm">Delete</button>
+								<a asp-page="Edit" asp-route-id="@book.Id" class="btn btn-success btn-sm text-white">Edit</a>
 							</td>
 						</tr>
 					}

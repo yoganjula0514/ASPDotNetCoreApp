@@ -13,5 +13,26 @@ namespace BookListRazor.Pages.BookList
             Books = new List<Book>();
             Books.AddRange(BookContainer.Books);
         }
+
+        public IActionResult OnPostDelete(int id)
+        {
+            OnGet();
+
+            Book bookToBeDeleted = null;
+            foreach (var book in from book in BookContainer.Books
+                                 where book.Id == id
+                                 select book)
+            {
+                bookToBeDeleted = book;
+                break;
+            }
+
+            if(bookToBeDeleted != null)
+            {
+                BookContainer.Books.Remove(bookToBeDeleted);
+            }
+
+            return RedirectToPage("Index");
+        }
     }
 }
