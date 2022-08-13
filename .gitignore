@@ -1,0 +1,22 @@
+﻿# Generated files/directories
+Bin/
+obj/
+Release/
+Debug/
+Externals/
+packages
+ProductAssemblyInfo.cs
+
+# Editor temp files
+*.VC.db
+*.VC.opendb
+*.vs
+*.boltdata
+*.cov
+*.opensdf
+*.sdf
+*.aps
+*.ncb
+*.user
+*.suo
+*.orig
