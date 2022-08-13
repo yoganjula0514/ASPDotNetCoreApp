@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstWebApplication", "MyFirstWebApplication\MyFirstWebApplication.csproj", "{4A5C40ED-EE08-475F-8ACD-3148243F749B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookListRazor", "BookListRazor\BookListRazor.csproj", "{CC7B4113-942F-4F94-B22E-751693442156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4A5C40ED-EE08-475F-8ACD-3148243F749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5C40ED-EE08-475F-8ACD-3148243F749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5C40ED-EE08-475F-8ACD-3148243F749B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7B4113-942F-4F94-B22E-751693442156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7B4113-942F-4F94-B22E-751693442156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7B4113-942F-4F94-B22E-751693442156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7B4113-942F-4F94-B22E-751693442156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
